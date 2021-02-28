@@ -2,7 +2,7 @@
   "name": "shri-2021-task-1",
   "version": "1.0.0",
   "description": "shri-2021-task-1",
-  "main": "stories.js",
+  "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack serve"

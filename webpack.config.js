@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: { main: './src/page/stories.js' },
+  entry: { main: './src/page/index.js' },
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'stories.js',
@@ -16,7 +16,6 @@ module.exports = {
     open: true,
     compress: true,
     port: 8080,
-    writeToDisk: true,
   },
   module: {
     rules: [

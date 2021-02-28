@@ -1,0 +1,9 @@
+@import url(./__title/stories__title.css);
+@import url(./__subtitle/stories__subtitle.css);
+
+.stories {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,31 @@
+.stories__subtitle {
+  color: var(--subtitle-color);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin: 0 7.78%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+@media screen and (orientation: portrait) {
+  .stories__subtitle {
+    text-align: left;
+    margin: 0 13.83% 0 6.38%;
+  }
+}
+
+@media screen and (max-width : 1439px) {
+  .stories__subtitle {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+}
+
+@media screen and (max-width : 767px) {
+  .stories__subtitle {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

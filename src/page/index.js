@@ -1,4 +1,4 @@
-import './stories.css';
+import './index.css';
 
 const numbers = [2, 3, 5];
 

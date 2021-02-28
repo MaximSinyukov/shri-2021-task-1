@@ -3,7 +3,8 @@ const presets = [
     targets: {
       firefox: '85',
       chrome: '88',
-      ios: '14'
+      ios: '14',
+      android: '81'
     },
 
     useBuiltIns: "entry"
