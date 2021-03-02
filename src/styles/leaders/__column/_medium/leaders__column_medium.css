@@ -1,0 +1,10 @@
+.leaders__column_medium {
+  --base-height: 35.2%;
+  --base-z-index: 3;
+}
+
+@media screen and (orientation: portrait) {
+  .leaders__column_medium {
+    --base-height: 45.1%;
+  }
+}

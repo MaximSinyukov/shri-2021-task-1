@@ -1,0 +1,11 @@
+.leaders__column {
+  display: flex;
+  flex-direction: column;
+  width: 19.5%;
+}
+
+@media screen and (orientation: portrait) {
+  .leaders__column {
+    width: 31.9%;
+  }
+}

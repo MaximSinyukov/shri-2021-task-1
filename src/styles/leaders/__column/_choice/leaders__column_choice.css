@@ -1,0 +1,10 @@
+@media screen and (orientation: portrait) {
+  .leaders__column_choice {
+    --choice: flex;
+    --choise-right-column: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    z-index: 5;
+  }
+}

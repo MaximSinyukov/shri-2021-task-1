@@ -1,0 +1,19 @@
+.leaders__column_small {
+  --base-height: 27.2%;
+  --base-z-index: 2;
+}
+
+@media screen and (orientation: portrait) {
+  .leaders__column_small {
+    --small-column-display: none;
+    --person-left: 0;
+    --leaders-base-background: none;
+    --leaders-base-shadow: none;
+    --results-margin: 8.5%;
+    --results-text-color: var(--main-text-color);
+    --number-border: 1px solid var(--secondary-text-color);
+    --number-margin: 0 auto 15%;
+    --number-padding: 5.8%;
+    position: absolute;
+  }
+}

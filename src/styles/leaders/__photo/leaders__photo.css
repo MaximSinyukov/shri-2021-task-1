@@ -1,0 +1,8 @@
+.leaders__photo {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  filter: var(--leaders-photo-grayscale);
+}

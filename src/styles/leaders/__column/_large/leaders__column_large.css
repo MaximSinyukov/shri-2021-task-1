@@ -1,0 +1,16 @@
+.leaders__column_large {
+  --base-height: 43.2%;
+  --base-z-index: 4;
+  --large-padding: 0;
+  --leaders-base-background: var(--leaders-base-background-large);
+  --leaders-base-shadow: var(--leaders-base-shadow-large);
+  --person-large-margin: auto 7.69% 0;
+}
+
+@media screen and (orientation: portrait) {
+  .leaders__column_large {
+    --base-height: 65.1%;
+  }
+}
+
+

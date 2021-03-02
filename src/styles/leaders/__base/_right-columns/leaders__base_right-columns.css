@@ -1,0 +1,11 @@
+.leaders__base_right-columns {
+  padding-right: 0;
+  padding-left: var(--person-left , 15%);
+}
+
+@media screen and (orientation: portrait) {
+  .leaders__base_right-columns {
+    --base-height: 55.1%;
+    width: var(--choise-right-column, 115.38%);
+  }
+}

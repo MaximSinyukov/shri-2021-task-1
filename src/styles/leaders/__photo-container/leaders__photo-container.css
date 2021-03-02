@@ -1,0 +1,11 @@
+.leaders__photo-container {
+  display: flex;
+  width: 61.54%;
+  margin: 0 19.23% 5.77%;
+}
+
+.leaders__photo-container::after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}

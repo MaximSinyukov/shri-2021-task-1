@@ -1,5 +1,5 @@
 .stories__title {
-  color: var(--title-color);
+  color: var(--main-text-color);
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin: 3% 7.78% 1.2%;
@@ -11,7 +11,7 @@
 @media screen and (orientation: portrait) {
   .stories__title {
     text-align: left;
-    margin: 3% 13.83% 2.13% 6.38%;
+    margin: 5.32% 13.83% 2.13% 6.38%;
   }
 }
 
