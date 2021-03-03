@@ -3,13 +3,6 @@
 @import url(./__column/_small/leaders__column_small.css);
 @import url(./__column/_medium/leaders__column_medium.css);
 @import url(./__column/_large/leaders__column_large.css);
-@import url(./__person/leaders__person.css);
-@import url(./__person/_right-columns/leader__person_right-columns.css);
-@import url(./__emoji/leaders__emoji.css);
-@import url(./__photo-container/leaders__photo-container.css);
-@import url(./__photo/leaders__photo.css);
-@import url(./__name/leaders__name.css);
-@import url(./__results/leaders__results.css);
 @import url(./__base/leaders__base.css);
 @import url(./__base/_right-columns/leaders__base_right-columns.css);
 @import url(./__number/leaders__number.css);

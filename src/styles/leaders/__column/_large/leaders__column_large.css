@@ -4,7 +4,7 @@
   --large-padding: 0;
   --leaders-base-background: var(--leaders-base-background-large);
   --leaders-base-shadow: var(--leaders-base-shadow-large);
-  --person-large-margin: auto 7.69% 0;
+  --person-large-margin: 0 7.69%;
 }
 
 @media screen and (orientation: portrait) {

@@ -5,3 +5,5 @@
 @import url(../styles/theme/_light/theme_light.css);
 @import url(../styles/stories/stories.css);
 @import url(../styles/leaders/leaders.css);
+@import url(../styles/person/person.css);
+@import url(../styles/person/_right-columns/person_right-columns.css);

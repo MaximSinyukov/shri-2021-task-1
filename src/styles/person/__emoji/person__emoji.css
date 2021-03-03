@@ -1,4 +1,4 @@
-.leaders__emoji {
+.person__emoji {
   position: absolute;
   top: -1.23%;
   left: 50%;
@@ -9,21 +9,21 @@
 }
 
 @media screen and (orientation: portrait) and (max-width : 1600px), screen and (orientation: landscape) and (max-width : 1680px) {
-  .leaders__emoji {
+  .person__emoji {
     font-size: 66px;
     line-height: 68px;
   }
 }
 
 @media screen and (orientation: portrait) and (max-width : 1152px), screen and (orientation: landscape) and (max-width : 1440px) {
-  .leaders__emoji {
+  .person__emoji {
     font-size: 48px;
     line-height: 50px;
   }
 }
 
 @media screen and (orientation: portrait) and (max-width : 540px), screen and (orientation: landscape) and (max-width : 1152px) {
-  .leaders__emoji {
+  .person__emoji {
     font-size: 30px;
     line-height: 32px;
   }

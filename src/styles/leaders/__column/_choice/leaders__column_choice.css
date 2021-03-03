@@ -2,6 +2,7 @@
   .leaders__column_choice {
     --choice: flex;
     --choise-right-column: 100%;
+    --choice-person-padding: 8.5%;
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 0);

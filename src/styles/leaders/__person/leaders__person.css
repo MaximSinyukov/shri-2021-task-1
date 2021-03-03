@@ -1,7 +1,0 @@
-.leaders__person {
-  display: var(--choice, var(--small-column-display, flex));
-  flex-direction: column;
-  margin: var(--person-large-margin, auto 0 0);
-  width: 100%;
-  position: relative;
-}
