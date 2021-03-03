@@ -19,19 +19,19 @@
   flex-direction: row;
   box-sizing: border-box;
   flex-grow: 1;
-  margin: 5% 9.88% 0;
+  margin: 3% 9.88% 0;
   position: relative;
 }
 
 @media screen and (orientation: portrait) {
   .leaders {
-    min-height: 366px;
+    min-height: 386px;
     margin: 15.69% 6.38% 0;
   }
 }
 
 @media screen and (max-width : 1660px) and (orientation: landscape) {
   .leaders {
-    margin: 7.18% 9.88% 0;
+    margin: 4.19% 9.88% 0;
   }
 }
