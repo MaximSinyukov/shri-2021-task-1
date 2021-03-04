@@ -2,8 +2,8 @@
   --base-height: 43.2%;
   --base-z-index: 4;
   --large-padding: 0;
-  --leaders-base-background: var(--leaders-base-background-large);
-  --leaders-base-shadow: var(--leaders-base-shadow-large);
+  --leaders-base-background: var(--background-gold);
+  --leaders-base-shadow: var(--box-shadow-gold);
   --person-large-margin: 0 7.69%;
 }
 
