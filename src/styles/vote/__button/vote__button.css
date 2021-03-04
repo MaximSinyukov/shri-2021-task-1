@@ -1,0 +1,53 @@
+.vote__button {
+  display: block;
+  background-image: var(--vote-button-url);
+  background-size: cover;
+  background-position: center;
+  width: 10.53%;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  bottom: calc(100vh * 0.12);
+  transform: translate(-50%, 0);
+  transition: background-image .3s ease;
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.vote__button::after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.vote__button:disabled, .vote__button:hover, .vote__button:active {
+  background-image: var(--vote-disabled-button-url);
+}
+
+.vote__button:disabled {
+  cursor: default;
+}
+
+@media screen and (orientation: landscape) and (max-width : 540px) {
+  .vote__button {
+    bottom: calc(100vh * 0.1383);
+  }
+}
+
+
+@media screen and (orientation: portrait) {
+  .vote__button {
+    width: 19.51%;
+    top: auto;
+    bottom: 4.37%;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width : 768px) {
+  .vote__button {
+    max-width: 110px;
+  }
+}

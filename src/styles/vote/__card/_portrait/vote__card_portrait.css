@@ -1,0 +1,9 @@
+.vote__card_portrait {
+  display: none;
+}
+
+@media screen and (orientation: portrait) {
+  .vote__card_portrait {
+    display: block;
+  }
+}

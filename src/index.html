@@ -8,71 +8,77 @@
 </head>
 <body class="page theme_dark">
   <section class="stories">
-    <h1 class="stories__title">Больше всего коммитов</h1>
+    <h1 class="stories__title">Самый 🔎 внимательный разработчик</h1>
     <h2 class="stories__subtitle">Спринт № 213</h2>
-    <div class="leaders">
-      <div class="leaders__column leaders__column_small   leaders__column_choice">
-        <div class="person">
-          <span class="person__emoji">👍</span>
-          <div class="person__photo-container">
-            <img class="person__photo" src="<%=require('./images/8.jpg')%>" alt="фото участника">
+    <div class="vote">
+      <button type="button" class="vote__button vote__button_up" disabled></button>
+      <button type="button" class="vote__button vote__button_down"></button>
+      <ul class="vote__cards-container">
+        <li class="vote__card">
+          <div class="person">
+            <div class="person__photo-container">
+              <img class="person__photo" src="<%=require('./images/1.jpg')%>" alt="фото участника">
+            </div>
+            <span class="person__name">Евгений Дементьев</span>
           </div>
-          <span class="person__name">Александр Иванков</span>
-          <span class="person__results">19</span>
-        </div>
-        <div class="leaders__base">
-          <span class="leaders__number">5</span>
-        </div>
-      </div>
-      <div class="leaders__column leaders__column_medium">
-        <div class="person">
-          <div class="person__photo-container">
-            <img class="person__photo" src="<%=require('./images/7.jpg')%>" alt="фото участника">
+        </li>
+        <li class="vote__card vote__card_selected">
+          <div class="person">
+            <div class="person__photo-container">
+              <img class="person__photo" src="<%=require('./images/4.jpg')%>" alt="фото участника">
+            </div>
+            <span class="person__name">Вадим Пацев</span>
           </div>
-          <span class="person__name">Дмитрий Андриянов</span>
-          <span class="person__results">22</span>
-        </div>
-        <div class="leaders__base">
-          <span class="leaders__number">3</span>
-        </div>
-      </div>
-      <div class="leaders__column leaders__column_large">
-        <div class="person">
-          <span class="person__emoji">👑</span>
-          <div class="person__photo-container">
-            <img class="person__photo" src="<%=require('./images/3.jpg')%>" alt="фото участника">
+        </li>
+        <li class="vote__card">
+          <div class="person">
+            <div class="person__photo-container">
+              <img class="person__photo" src="<%=require('./images/10.jpg')%>" alt="фото участника">
+            </div>
+            <span class="person__name">Яна Берникова</span>
           </div>
-          <span class="person__name">Дарья Ковалева</span>
-          <span class="person__results">32</span>
-        </div>
-        <div class="leaders__base">
-          <span class="leaders__number">1</span>
-        </div>
-      </div>
-      <div class="leaders__column leaders__column_medium">
-        <div class="person person_right-columns">
-          <div class="person__photo-container">
-            <img class="person__photo" src="<%=require('./images/9.jpg')%>" alt="фото участника">
+        </li>
+        <li class="vote__card">
+          <div class="person">
+            <div class="person__photo-container">
+              <img class="person__photo" src="<%=require('./images/12.jpg')%>" alt="фото участника">
+            </div>
+            <span class="person__name">Алексей Ярошевич</span>
           </div>
-          <span class="person__name">Сергей Бережной</span>
-          <span class="person__results">27</span>
-        </div>
-        <div class="leaders__base leaders__base_right-columns">
-          <span class="leaders__number">2</span>
-        </div>
-      </div>
-      <div class="leaders__column leaders__column_small ">
-        <div class="person person_right-columns">
-          <div class="person__photo-container">
-            <img class="person__photo" src="<%=require('./images/6.jpg')%>" alt="фото участника">
+        </li>
+        <li class="vote__card">
+          <div class="person">
+            <div class="person__photo-container">
+              <img class="person__photo" src="<%=require('./images/11.jpg')%>" alt="фото участника">
+            </div>
+            <span class="person__name">Юрий Фролов</span>
           </div>
-          <span class="person__name">Андрей Мокроусов</span>
-          <span class="person__results">20</span>
-        </div>
-        <div class="leaders__base leaders__base_right-columns">
-          <span class="leaders__number">4</span>
-        </div>
-      </div>
+        </li>
+        <li class="vote__card">
+          <div class="person">
+            <div class="person__photo-container">
+              <img class="person__photo" src="<%=require('./images/2.jpg')%>" alt="фото участника">
+            </div>
+            <span class="person__name">Александр Шлейко</span>
+          </div>
+        </li>
+        <li class="vote__card vote__card_portrait">
+          <div class="person">
+            <div class="person__photo-container">
+              <img class="person__photo" src="<%=require('./images/5.jpg')%>" alt="фото участника">
+            </div>
+            <span class="person__name">Александр Николаичев</span>
+          </div>
+        </li>
+        <li class="vote__card vote__card_portrait">
+          <div class="person">
+            <div class="person__photo-container">
+              <img class="person__photo" src="<%=require('./images/6.jpg')%>" alt="фото участника">
+            </div>
+            <span class="person__name">Андрей Мокроусов</span>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 </body>

@@ -2,9 +2,13 @@
   background: #fff;
   --main-text-color: #261c00;
   --secondary-text-color: #bfbfbf;
+  --background-gold: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
+  --box-shadow-gold: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8);
   --leaders-base-background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
   --leaders-base-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(207, 207, 207, 0.5);
-  --leaders-base-background-large: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
-  --leaders-base-shadow-large: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8);
   --leaders-photo-grayscale: none;
+  --vote-button-url: url(../../../images/button-light.svg);
+  --vote-disabled-button-url: url(../../../images/button-hover-light.svg);
+  --vote-hover-background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
+  --vote-hover-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8);
 }

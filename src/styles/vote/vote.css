@@ -1,0 +1,28 @@
+@import url(./__button/vote__button.css);
+@import url(./__button/_up/vote__button_up.css);
+@import url(./__cards-container/vote__cards-container.css);
+@import url(./__card/vote__card.css);
+@import url(./__card/_selected/vote__card_selected.css);
+@import url(./__card/_portrait/vote__card_portrait.css);
+
+.vote {
+  width: 80.42%;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (orientation: landscape) and (max-width : 1600px) {
+  .vote {
+    width: 90.42%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .vote {
+    display: flex;
+    margin: 0 6.38%;
+    width: 87.24%;
+    flex-grow: 1;
+  }
+}
+
