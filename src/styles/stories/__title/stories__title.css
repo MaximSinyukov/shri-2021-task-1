@@ -15,7 +15,7 @@
   }
 }
 
-@media screen and (max-width : 1439px) {
+@media screen and (orientation: portrait) and (max-width : 1152px), screen and (orientation: landscape) and (max-width : 1440px) {
   .stories__title {
     font-size: 48px;
     line-height: 50px;
@@ -23,9 +23,17 @@
 
 }
 
-@media screen and (max-width : 767px) {
+@media screen and (orientation: portrait) and (max-width : 540px), screen and (orientation: landscape) and (max-width : 1023px) {
   .stories__title {
     font-size: 30px;
     line-height: 32px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width : 568px) {
+  .stories__title {
+    margin: 2% 7.78% 1.2%;
+    font-size: 22px;
+    line-height: 26px;
   }
 }

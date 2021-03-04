@@ -15,7 +15,7 @@
   }
 }
 
-@media screen and (max-width : 1439px) {
+@media screen and (orientation: portrait) and (max-width : 1152px), screen and (orientation: landscape) and (max-width : 1440px) {
   .stories__subtitle {
     font-size: 24px;
     line-height: 26px;
@@ -23,9 +23,16 @@
 
 }
 
-@media screen and (max-width : 767px) {
+@media screen and (orientation: portrait) and (max-width : 540px), screen and (orientation: landscape) and (max-width : 1023px) {
   .stories__subtitle {
     font-size: 16px;
     line-height: 18px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width : 568px) {
+  .stories__subtitle {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
