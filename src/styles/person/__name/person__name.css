@@ -6,12 +6,10 @@
   font-weight: 500;
   font-size: 42px;
   line-height: 46px;
-  max-width: 300px;
+  max-width: 240px;
   color: var(--main-text-color);
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (orientation: portrait) and (max-width : 1600px), screen and (orientation: landscape) and (max-width : 1680px) {
@@ -24,7 +22,7 @@
 
 @media screen and (orientation: portrait) and (max-width : 1152px), screen and (orientation: landscape) and (max-width : 1440px) {
   .person__name {
-    max-width: 180px;
+    max-width: 140px;
     font-size: 24px;
     line-height: 26px;
   }
@@ -32,7 +30,7 @@
 
 @media screen and (orientation: portrait) and (max-width : 540px), screen and (orientation: landscape) and (max-width : 1152px) {
   .person__name {
-    max-width: 120px;
+    max-width: 95px;
     font-size: 16px;
     line-height: 18px;
   }
