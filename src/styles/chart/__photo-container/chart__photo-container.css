@@ -1,0 +1,17 @@
+.chart__photo-container {
+  margin: auto 5.91% auto 0;
+  width: calc(100vh * 0.1063);
+}
+
+.chart__photo-container::after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+@media screen and (orientation: portrait) {
+  .chart__photo-container {
+    margin: auto 3.72% auto 0;
+    width: calc(100vh * 0.0599);
+  }
+}

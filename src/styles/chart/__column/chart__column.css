@@ -1,0 +1,14 @@
+.chart__column {
+  margin: 20% 0 30%;
+  background: var(--chart-column-background);
+  box-shadow: var(--chart-column-shadow);
+  border-radius: 6px;
+  max-height: 70%;
+  min-height: 4.52%;
+}
+
+@media screen and (orientation: portrait) {
+  .chart__column {
+    min-height: 1.9%;
+  }
+}

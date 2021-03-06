@@ -1,0 +1,29 @@
+@import url(./__results/chart__results.css);
+@import url(./__column-container/chart__column-container.css);
+@import url(./__column-container/_active/chart__column-container_active.css);
+@import url(./__column-value/chart__column-value.css);
+@import url(./__column/chart__column.css);
+@import url(./__column-name/chart__column-name.css);
+@import url(./__leaders/chart__leaders.css);
+@import url(./__data-container/chart__data-container.css);
+@import url(./__person/chart__person.css);
+@import url(./__photo-container/chart__photo-container.css);
+@import url(./__person-photo/chart__person-photo.css);
+@import url(./__person-name/chart__person-name.css);
+@import url(./__person-results/chart__person-results.css);
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  margin: calc(100vh * 0.072) auto;
+  width: 100%;
+  flex-grow: 1;
+}
+
+@media screen and (orientation: portrait) {
+  .chart {
+    margin: 0;
+    overflow: hidden;
+    align-items: flex-end;
+  }
+}

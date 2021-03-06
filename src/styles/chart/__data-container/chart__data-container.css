@@ -1,0 +1,4 @@
+.chart__data-container {
+  display: flex;
+  flex-direction: column;
+}

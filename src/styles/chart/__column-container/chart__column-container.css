@@ -1,0 +1,13 @@
+.chart__column-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 7.25%;
+}
+
+@media screen and (orientation: portrait) {
+  .chart__column-container {
+    margin-left: 3.19%;
+    width: 5.32%;
+  }
+}

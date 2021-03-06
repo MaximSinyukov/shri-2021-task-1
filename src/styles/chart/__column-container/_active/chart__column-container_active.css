@@ -1,0 +1,5 @@
+.chart__column-container_active {
+  --color-active: var(--main-text-color);
+  --chart-column-background: var(--chart-background-cold);
+  --chart-column-shadow: var(--chart-shadow-cold);
+}

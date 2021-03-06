@@ -1,0 +1,30 @@
+.chart__column-value{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 54px;
+  text-align: center;
+  color: var(--color-active, var(--secondary-text-color));
+  margin: 0 auto;
+}
+
+@media screen and (orientation: portrait) and (max-width : 1600px), screen and (orientation: landscape) and (max-width : 1680px) {
+  .chart__column-value {
+    font-size: 42px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width : 1152px), screen and (orientation: landscape) and (max-width : 1440px) {
+  .chart__column-value {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width : 540px), screen and (orientation: landscape) and (max-width : 1152px) {
+  .chart__column-value {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,33 @@
+.chart__person-name {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 46px;
+  text-align: start;
+  color: var(--main-text-color);
+  margin: 0 0 3.3%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (orientation: portrait) and (max-width : 1600px), screen and (orientation: landscape) and (max-width : 1680px) {
+  .chart__person-name {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width : 1152px), screen and (orientation: landscape) and (max-width : 1440px) {
+  .chart__person-name {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width : 540px), screen and (orientation: landscape) and (max-width : 1152px) {
+  .chart__person-name {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

@@ -8,77 +8,76 @@
 </head>
 <body class="page theme_dark">
   <section class="stories">
-    <h1 class="stories__title">Самый 🔎 внимательный разработчик</h1>
+    <h1 class="stories__title">Коммиты</h1>
     <h2 class="stories__subtitle">Спринт № 213</h2>
-    <div class="vote">
-      <button type="button" class="vote__button vote__button_up" disabled></button>
-      <button type="button" class="vote__button vote__button_down"></button>
-      <ul class="vote__cards-container">
-        <li class="vote__card">
-          <div class="person">
-            <div class="person__photo-container">
-              <img class="person__photo" src="<%=require('./images/1.jpg')%>" alt="фото участника">
-            </div>
-            <span class="person__name">Евгений Дементьев</span>
+    <div class="chart">
+      <div class="chart__results">
+        <div class="chart__column-container">
+          <h3 class="chart__column-value">112</h3>
+          <div class="chart__column" style="height: calc((112 / 182) * 66.2%);"></div>
+          <h4 class="chart__column-name">207</h4>
+        </div>
+        <div class="chart__column-container">
+          <h3 class="chart__column-value">152</h3>
+          <div class="chart__column" style="height: calc((152 / 182) * 67.6%);"></div>
+          <h4 class="chart__column-name">208</h4>
+        </div>
+        <div class="chart__column-container">
+          <h3 class="chart__column-value">128</h3>
+          <div class="chart__column" style="height: calc((128 / 182) * 67.6%);"></div>
+          <h4 class="chart__column-name">209</h4>
+        </div>
+        <div class="chart__column-container">
+          <h3 class="chart__column-value">164</h3>
+          <div class="chart__column" style="height: calc((164 / 182) * 67.6%);"></div>
+          <h4 class="chart__column-name">210</h4>
+        </div>
+        <div class="chart__column-container">
+          <h3 class="chart__column-value">118</h3>
+          <div class="chart__column" style="height: calc((118 / 182) * 67.6%);"></div>
+          <h4 class="chart__column-name">211</h4>
+        </div>
+        <div class="chart__column-container">
+          <h3 class="chart__column-value">140</h3>
+          <div class="chart__column" style="height: calc((140 / 182) * 67.6%);"></div>
+          <h4 class="chart__column-name">212</h4>
+        </div>
+        <div class="chart__column-container chart__column-container_active">
+          <h3 class="chart__column-value">182</h3>
+          <div class="chart__column" style="height: calc((182 / 182) * 67.6%);"></div>
+          <h4 class="chart__column-name">213</h4>
+        </div>
+        <div class="chart__column-container">
+          <h3 class="chart__column-value">0</h3>
+          <div class="chart__column" style="height: calc((0 / 182) * 67.6%);"></div>
+          <h4 class="chart__column-name">214</h4>
+        </div>
+        <div class="chart__column-container">
+          <h3 class="chart__column-value">0</h3>
+          <div class="chart__column" style="height: calc((0 / 182) * 67.6%);"></div>
+          <h4 class="chart__column-name">214</h4>
+        </div>
+      </div>
+      <div class="chart__leaders">
+        <div class="chart__person">
+          <div class="chart__photo-container">
+            <img class="chart__person-photo" src="<%=require('./images/3.jpg')%>" alt="фото участника">
           </div>
-        </li>
-        <li class="vote__card vote__card_selected">
-          <div class="person">
-            <div class="person__photo-container">
-              <img class="person__photo" src="<%=require('./images/4.jpg')%>" alt="фото участника">
-            </div>
-            <span class="person__name">Вадим Пацев</span>
+          <div class="chart__data-container">
+            <h3 class="chart__person-name">Дарья Ковалева</h3>
+            <h4 class="chart__person-results">32</h4>
           </div>
-        </li>
-        <li class="vote__card">
-          <div class="person">
-            <div class="person__photo-container">
-              <img class="person__photo" src="<%=require('./images/10.jpg')%>" alt="фото участника">
-            </div>
-            <span class="person__name">Яна Берникова</span>
+        </div>
+        <div class="chart__person">
+          <div class="chart__photo-container">
+            <img class="chart__person-photo" src="<%=require('./images/9.jpg')%>" alt="фото участника">
           </div>
-        </li>
-        <li class="vote__card">
-          <div class="person">
-            <div class="person__photo-container">
-              <img class="person__photo" src="<%=require('./images/12.jpg')%>" alt="фото участника">
-            </div>
-            <span class="person__name">Алексей Ярошевич</span>
+          <div class="chart__data-container">
+            <h3 class="chart__person-name">Сергей Бережной</h3>
+            <h4 class="chart__person-results">27</h4>
           </div>
-        </li>
-        <li class="vote__card">
-          <div class="person">
-            <div class="person__photo-container">
-              <img class="person__photo" src="<%=require('./images/11.jpg')%>" alt="фото участника">
-            </div>
-            <span class="person__name">Юрий Фролов</span>
-          </div>
-        </li>
-        <li class="vote__card">
-          <div class="person">
-            <div class="person__photo-container">
-              <img class="person__photo" src="<%=require('./images/2.jpg')%>" alt="фото участника">
-            </div>
-            <span class="person__name">Александр Шлейко</span>
-          </div>
-        </li>
-        <li class="vote__card vote__card_portrait">
-          <div class="person">
-            <div class="person__photo-container">
-              <img class="person__photo" src="<%=require('./images/5.jpg')%>" alt="фото участника">
-            </div>
-            <span class="person__name">Александр Николаичев</span>
-          </div>
-        </li>
-        <li class="vote__card vote__card_portrait">
-          <div class="person">
-            <div class="person__photo-container">
-              <img class="person__photo" src="<%=require('./images/6.jpg')%>" alt="фото участника">
-            </div>
-            <span class="person__name">Андрей Мокроусов</span>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </section>
 </body>

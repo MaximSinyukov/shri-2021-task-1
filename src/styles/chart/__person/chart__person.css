@@ -1,0 +1,31 @@
+.chart__person {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin-left: 3.37%;
+  border-right: 2px solid var(--chart-border-color);
+}
+
+.chart__person:last-of-type {
+  border: none;
+}
+
+@media screen and (orientation: portrait) {
+  .chart__person {
+    margin: calc(100vh * 0.0239) 0 0 0;
+    padding-bottom: calc(100vh * 0.0239);
+    width: 100%;
+    height: calc(100vh * 0.0599);
+    border-right: none;
+    border-bottom: 2px solid var(--chart-border-color);
+  }
+
+  .chart__person:first-of-type {
+    margin: 0;
+  }
+
+  .chart__person:last-of-type {
+    padding-bottom: 0;
+  }
+
+}

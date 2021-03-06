@@ -1,0 +1,19 @@
+.chart__leaders {
+  display: flex;
+  width: 70.96%;
+  height: calc(100vh * 0.1064);
+  margin: 0 auto;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+@media screen and (orientation: portrait) {
+  .chart__leaders {
+    flex-direction: column;
+    width: 87.23%;
+    flex-grow: 1;
+    justify-content: initial;
+    height: auto;
+    margin: calc(100vh * 0.0359) auto;
+  }
+}
