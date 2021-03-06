@@ -4,29 +4,16 @@
   font-weight: 500;
   margin: 0 7.78%;
   text-align: center;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: calc(100vh * 0.0425);
+  line-height: calc(100vh * 0.0479);
 }
 
 @media screen and (orientation: portrait) {
   .stories__subtitle {
+    font-size: calc(100vh * 0.0239);
+    line-height: calc(100vh * 0.027);
     text-align: left;
     margin: 0 13.83% 0 6.38%;
-  }
-}
-
-@media screen and (orientation: portrait) and (max-width : 1152px), screen and (orientation: landscape) and (max-width : 1440px) {
-  .stories__subtitle {
-    font-size: 24px;
-    line-height: 26px;
-  }
-
-}
-
-@media screen and (orientation: portrait) and (max-width : 540px), screen and (orientation: landscape) and (max-width : 1023px) {
-  .stories__subtitle {
-    font-size: 16px;
-    line-height: 18px;
   }
 }
 
