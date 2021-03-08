@@ -1,0 +1,15 @@
+.diagram__chart {
+  width: 41.09%;
+  box-sizing: border-box;
+  margin: auto auto auto 0;
+  height: calc(100vh * 0.6383);
+  position: relative;
+}
+
+@media screen and (orientation: portrait) {
+  .diagram__chart {
+    width: 100%;
+    height: calc(100vh * 0.491);
+    margin: auto 0;
+  }
+}

@@ -1,0 +1,16 @@
+.diagram__line-color {
+  display: block;
+  width: calc(100vh * 0.0425);
+  height: calc(100vh * 0.0425);
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--background);
+  box-shadow: var(--box-shadow);
+}
+
+@media screen and (orientation: portrait) {
+  .diagram__line-color {
+    width: calc(100vh * 0.0239);
+    height: calc(100vh * 0.0239);
+  }
+}

@@ -1,0 +1,21 @@
+.diagram__donut-title {
+  margin: 0;
+  max-width: 250px;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  line-height: calc(100vh * 0.0585);
+  font-size: calc(100vh * 0.0532);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: var(--main-text-color);
+}
+
+@media screen and (orientation: portrait) {
+  .diagram__donut-title {
+    line-height: calc(100vh * 0.0449);
+    font-size: calc(100vh * 0.0479);
+  }
+}

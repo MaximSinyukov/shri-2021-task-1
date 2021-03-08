@@ -2,18 +2,34 @@
   background: #fff;
   --main-text-color: #261c00;
   --secondary-text-color: #bfbfbf;
+  --border-color: rgba(191, 191, 191, .3);
+  --photo-grayscale: none;
   --background-gold: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
   --box-shadow-gold: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8);
+
   --leaders-base-background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
   --leaders-base-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(207, 207, 207, 0.5);
-  --photo-grayscale: none;
+
   --vote-button-url: url(../../../images/button-light.svg);
   --vote-disabled-button-url: url(../../../images/button-hover-light.svg);
   --vote-hover-background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
   --vote-hover-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8);
+
   --chart-column-background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
   --chart-column-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(207, 207, 207, 0.5);
-  --chart-border-color: rgba(191, 191, 191, .3);
   --chart-background-cold: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
   --chart-shadow-cold: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8);
+
+  --diagram-gradient-gold: url(#light-gold);
+  --diagram-gradient-gold-low: url(#light-gold-low);
+  --diagram-gradient-grey-light: url(#light-grey-light);
+  --diagram-gradient-grey-dark: url(#light-grey-dark);
+  --diagram-list-gold: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%);
+  --diagram-list-gold-low: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%);
+  --diagram-list-grey-light: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.1725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%);
+  --diagram-list-grey-dark: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%);
+  --diagram-list-shadow-gold: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.9);
+  --diagram-list-shadow-gold-low: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.4);
+  --diagram-list-shadow-grey-light: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(105, 105, 105, 0.2);
+  --diagram-list-shadow-grey-dark: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(131, 131, 131, 0.6);
 }

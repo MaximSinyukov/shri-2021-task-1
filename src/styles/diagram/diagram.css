@@ -1,0 +1,27 @@
+@import url(./__chart/diagram__chart.css);
+@import url(./__donut/diagram__donut.css);
+@import url(./__donut-title/diagram__donut-title.css);
+@import url(./__donut-subtitle/diagram__donut-subtitle.css);
+@import url(./__donut-segment/diagram__donut-segment.css);
+@import url(./__list/diagram__list.css);
+@import url(./__list-line/diagram__list-line.css);
+@import url(./__line-color/diagram__line-color.css);
+@import url(./__main-text/diagram__main-text.css);
+@import url(./__additional-text/diagram__additional-text.css);
+
+.diagram {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 87.425%;
+  margin: 4.34% auto;
+  margin: auto;
+}
+
+@media screen and (orientation: portrait) {
+  .diagram {
+    flex-direction: column;
+    margin: 0 6.38%;
+    justify-content: flex-end;
+  }
+}

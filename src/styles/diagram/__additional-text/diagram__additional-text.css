@@ -1,0 +1,14 @@
+.diagram__additional-text {
+  margin: 0 5.26% 0 auto;
+  color: var(--secondary-text-color);
+}
+
+.diagram__additional-text:nth-of-type(3n) {
+  margin: 0;
+}
+
+@media screen and (orientation: portrait) {
+  .diagram__additional-text {
+    margin: 0 4.9% 0 auto;
+  }
+}

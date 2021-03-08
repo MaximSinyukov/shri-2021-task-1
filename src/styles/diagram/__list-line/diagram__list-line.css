@@ -1,0 +1,43 @@
+.diagram__list-line {
+  color: var(--main-text-color);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: calc(100vh * 0.0425);
+  line-height: calc(100vh * 0.0479);
+  display: flex;
+  flex-direction: row;
+  padding: 5.26% 0;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.diagram__list-line:first-of-type {
+  padding-top: 0;
+  --background: var(--diagram-list-gold);
+  --box-shadow: var(--diagram-list-shadow-gold);
+}
+
+.diagram__list-line:nth-of-type(2){
+  --background: var(--diagram-list-gold-low);
+  --box-shadow: var(--diagram-list-shadow-gold-low);
+}
+
+.diagram__list-line:nth-of-type(3){
+  --background: var(--diagram-list-grey-light);
+  --box-shadow: var(--diagram-list-shadow-grey-light);
+}
+
+
+.diagram__list-line:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+  --background: var(--diagram-list-grey-dark);
+  --box-shadow: var(--diagram-list-shadow-grey-dark);
+}
+
+@media screen and (orientation: portrait) {
+  .diagram__list-line {
+    font-size: calc(100vh * 0.0239);
+    line-height: calc(100vh * 0.0269);
+    padding: 4.9% 0;
+  }
+}

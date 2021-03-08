@@ -1,0 +1,22 @@
+.diagram__donut-subtitle {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 32%;
+  min-width: 67%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  line-height: calc(100vh * 0.0478);
+  font-size: calc(100vh * 0.0425);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+
+@media screen and (orientation: portrait) {
+  .diagram__donut-subtitle {
+    min-width: 57%;
+    line-height: calc(100vh * 0.0299);
+    font-size: calc(100vh * 0.0329);
+  }
+}

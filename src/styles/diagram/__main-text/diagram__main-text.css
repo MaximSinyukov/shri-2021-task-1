@@ -1,0 +1,9 @@
+.diagram__main-text {
+  margin: 0 0 0 3.29%;
+}
+
+@media screen and (orientation: portrait) {
+  .diagram__main-text {
+    margin: 0 0 0 3.05%;
+  }
+}

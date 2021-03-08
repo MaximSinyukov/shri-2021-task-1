@@ -1,0 +1,13 @@
+.diagram__list {
+  list-style: none;
+  padding: 0;
+  width: 52.05%;
+  margin: auto 0;
+}
+
+@media screen and (orientation: portrait) {
+  .diagram__list {
+    width: 100%;
+    margin: 0 0 7.32%;
+  }
+}

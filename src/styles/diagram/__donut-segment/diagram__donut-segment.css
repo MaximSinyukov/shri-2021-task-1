@@ -1,0 +1,24 @@
+.diagram__donut-segment {
+  cx: 70;
+  cy: 70;
+  fill: transparent;
+  stroke-width: 20;
+  r: 57.2957795130823;
+}
+
+.diagram__donut-segment:nth-of-type(1) {
+  stroke: var(--diagram-gradient-gold);
+}
+
+.diagram__donut-segment:nth-of-type(2) {
+  stroke: var(--diagram-gradient-gold-low);
+}
+
+.diagram__donut-segment:nth-of-type(3) {
+  stroke: var(--diagram-gradient-grey-light);
+}
+
+.diagram__donut-segment:nth-of-type(4) {
+  stroke: var(--diagram-gradient-grey-dark);
+  mask: var(--diagram-list-shadow-gold);
+}
