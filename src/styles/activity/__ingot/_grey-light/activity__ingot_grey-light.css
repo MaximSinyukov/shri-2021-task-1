@@ -1,0 +1,4 @@
+.activity__ingot_grey-light {
+  background: var(--activity-ingot-grey-light);
+  box-shadow: var(--activity-ingot-shadow-grey-light);
+}

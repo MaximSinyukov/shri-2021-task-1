@@ -1,0 +1,21 @@
+.activity__image {
+  background: bottom / contain no-repeat;
+  width: 100%;
+  height: calc(100vh * 0.1994);
+  position: absolute;
+  bottom: 0;
+}
+
+.activity__image:nth-of-type(2n) {
+  display: none;
+}
+
+@media screen and (orientation: portrait) {
+  .activity__image:nth-of-type(2n+1) {
+    display: none;
+  }
+
+  .activity__image:nth-of-type(2n) {
+    display: block;
+  }
+}

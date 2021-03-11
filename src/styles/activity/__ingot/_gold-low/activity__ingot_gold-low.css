@@ -1,0 +1,4 @@
+.activity__ingot_gold-low {
+  background: var(--activity-ingot-gold-low);
+  box-shadow: var(--activity-ingot-shadow-gold-low);
+}

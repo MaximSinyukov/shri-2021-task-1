@@ -1,0 +1,20 @@
+.activity__map {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 0 7.53%;
+  list-style: none;
+  padding: 0;
+  height: calc(100vh * 0.298);
+}
+
+@media screen and (orientation: portrait) {
+  .activity__map {
+    flex-direction: row;
+    margin: auto 0;
+    /* На макете карта должна центрироваться. Но максимальные коммиты в первый час достают до подзаголовка. Пришлось немного сдвинуть карту. */
+    padding: 9.33% 0 0;
+    height: calc(100vh * 0.6407);
+  }
+}

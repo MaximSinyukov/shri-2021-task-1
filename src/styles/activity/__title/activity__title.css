@@ -1,0 +1,30 @@
+.activity__title {
+  color: var(--secondary-text-color);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin: auto auto 0;
+  text-align: center;
+  font-size: calc(100vh * 0.0426);
+  line-height: calc(100vh * 0.0479);
+}
+
+.activity__title:nth-of-type(2) {
+  display: none;
+}
+
+
+@media screen and (orientation: portrait) {
+  .activity__title {
+    margin: auto auto 0 0;
+    font-size: calc(100vh * 0.0239);
+    line-height: calc(100vh * 0.0269);
+  }
+
+  .activity__title:first-of-type {
+    display: none;
+  }
+
+  .activity__title:last-of-type {
+    display: block;
+  }
+}

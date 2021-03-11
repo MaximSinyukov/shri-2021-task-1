@@ -1,0 +1,33 @@
+@import url(./__map/activity__map.css);
+@import url(./__cell/activity__cell.css);
+@import url(./__image/activity__image.css);
+@import url(./__image/_extra/activity__image_extra.css);
+@import url(./__image/_max/activity__image_max.css);
+@import url(./__image/_mid/activity__image_mid.css);
+@import url(./__image/_min/activity__image_min.css);
+@import url(./__pointers/activity__pointers.css);
+@import url(./__gap/activity__gap.css);
+@import url(./__ingot/activity__ingot.css);
+@import url(./__ingot/_gold/activity__ingot_gold.css);
+@import url(./__ingot/_gold-low/activity__ingot_gold-low.css);
+@import url(./__ingot/_grey-light/activity__ingot_grey-light.css);
+@import url(./__ingot/_grey-dark/activity__ingot_grey-dark.css);
+@import url(./__time-gap/activity__time-gap.css);
+@import url(./__title/activity__title.css);
+
+.activity {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vh * 1.13);
+  margin: auto;
+}
+
+@media screen and (orientation: portrait) {
+  .activity {
+    justify-content: flex-end;
+    flex-grow: 1;
+    width: calc(100vh * 0.491);
+    max-width: 88%;
+    margin: 0 auto 6.39%;
+  }
+}

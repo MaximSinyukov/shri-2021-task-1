@@ -1,0 +1,14 @@
+.activity__gap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 18.07%;
+  height: calc(100vh * 0.101);
+}
+
+@media screen and (orientation: portrait) {
+  .activity__gap {
+    width: 17.99%;
+    height: calc(100vh * 0.0569);
+  }
+}
