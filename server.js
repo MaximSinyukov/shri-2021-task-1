@@ -3,7 +3,7 @@ const express = require('express');
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
-const config = require('./webpack.config.js');
+const config = require('./webpack.server.config.js');
 
 const app = express();
 const HTML_FILE = path.join(__dirname, 'index.html');
