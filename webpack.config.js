@@ -2,19 +2,26 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
-  entry: { main: './src/page/index.js' },
+  entry: {
+    main: ['webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000', './src/page/index.js']
+  },
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'stories.js',
-    publicPath: ''
+    publicPath: '/'
   },
   mode: 'development',
   devServer: {
     contentBase: path.resolve(__dirname, './build'),
     open: true,
     compress: true,
+    inline: true,
+    hot: true,
+    host: `localhost`,
     port: 8080,
   },
   module: {
@@ -41,9 +48,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
     }),
     new CleanWebpackPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
       filename: 'stories.css'
     }),
