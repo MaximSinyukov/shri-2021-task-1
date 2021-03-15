@@ -42,7 +42,28 @@ const personsPhoto = {
 }
 
 class TemplateBuilder {
-
+  vote(data) {
+    let templateContent = '';
+    data.data.users.forEach((user, i) => {
+      if (i < 8) {
+      templateContent = templateContent + `<li class="vote__card ${i > 5 ? 'vote__card_portrait' : ''} ${data.data.selectedUserId === user.id ? 'vote__card_selected' : ''}">
+                                            <div class="person">
+                                              <div class="person__photo-container">
+                                                <img class="person__photo" src="${personsPhoto[user.id]}" alt="фото участника">
+                                              </div>
+                                              <span class="person__name">${user.name}</span>
+                                            </div>
+                                          </li>`;
+      }
+    });
+    return `<div class="vote">
+              <button type="button" class="vote__button vote__button_up" disabled></button>
+              <button type="button" class="vote__button vote__button_down"></button>
+              <ul class="vote__cards-container">
+                ${templateContent}
+              </ul>
+            </div>`;
+  }
 
   leaders(data) {
     let templateContent = '';
