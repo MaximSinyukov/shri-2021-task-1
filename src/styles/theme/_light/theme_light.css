@@ -12,8 +12,8 @@
 
   --vote-button-url: url(../../../images/button-light.svg);
   --vote-disabled-button-url: url(../../../images/button-hover-light.svg);
-  --vote-hover-background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
-  --vote-hover-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8);
+  --vote-hover-background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
+  --vote-hover-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(207, 207, 207, 0.5);
 
   --chart-column-background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
   --chart-column-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(207, 207, 207, 0.5);
