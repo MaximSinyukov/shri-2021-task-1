@@ -1,6 +1,6 @@
 import './index.css';
 import data from '../../data/data.json';
-// импортировал фото, чтобы вебпак проставил нужные имена
+// импортировал фото, чтобы вебпак проставил нужные пути
 import darkIcon from '../images/favicon_dark.ico';
 import lightIcon from '../images/favicon_light.ico';
 import personPhoto1 from '../images/1.jpg';
@@ -42,8 +42,51 @@ const personsPhoto = {
 }
 
 class TemplateBuilder {
+  chart(data) {
+    let contentResults = '';
+    let contentLeaders = '';
+
+    const maxValue = data.data.values.reduce((prev, item) => {
+      return prev > item.value ? prev : item.value;
+    }, 0);
+
+    data.data.values.forEach((value, i) => {
+      if ((i > 3)&&(i < 13)) {
+        contentResults = contentResults + `<div class="chart__column-container ${value.active ? 'chart__column-container_active' : ''}">
+                                            <h3 class="chart__column-value">${value.value}</h3>
+                                            <div class="chart__column" style="height: calc((${value.value} / ${maxValue}) * 66.2%);"></div>
+                                            <h4 class="chart__column-name">${value.title}</h4>
+                                          </div>`;
+      }
+    });
+
+    data.data.users.forEach((user, i) => {
+      if (i < 2) {
+        contentLeaders = contentLeaders + `<div class="chart__person">
+                                            <div class="chart__photo-container">
+                                              <img class="chart__person-photo" src="${personsPhoto[user.id]}" alt="фото участника">
+                                            </div>
+                                            <div class="chart__data-container">
+                                              <h3 class="chart__person-name">${user.name}</h3>
+                                              <h4 class="chart__person-results">${user.valueText}</h4>
+                                            </div>
+                                          </div>`;
+      }
+    });
+
+    return `<div class="chart">
+              <div class="chart__results">
+                ${contentResults}
+              </div>
+              <div class="chart__leaders">
+                ${contentLeaders}
+              </div>
+            </div>`;
+  }
+
   vote(data) {
     let templateContent = '';
+
     data.data.users.forEach((user, i) => {
       if (i < 8) {
       templateContent = templateContent + `<li class="vote__card ${i > 5 ? 'vote__card_portrait' : ''} ${data.data.selectedUserId === user.id ? 'vote__card_selected' : ''}">
@@ -56,6 +99,7 @@ class TemplateBuilder {
                                           </li>`;
       }
     });
+
     return `<div class="vote">
               <button type="button" class="vote__button vote__button_up" disabled></button>
               <button type="button" class="vote__button vote__button_down"></button>
@@ -71,6 +115,7 @@ class TemplateBuilder {
     const selectedItem = data.data.users.find((user) => user.id === data.data.selectedUserId);
     const originalSelectedIndex = data.data.users.indexOf(selectedItem);
     let selectedIndex = originalSelectedIndex;
+
     orderArray.forEach((user) => {
       // если выбранный участник не окажется в пятерке
       if ((user === 4)&&(selectedIndex > 4 )) {
@@ -92,6 +137,7 @@ class TemplateBuilder {
                                               </div>
                                             </div>`;
     });
+
     return `<div class="leaders">
               ${templateContent}
             </div>`
