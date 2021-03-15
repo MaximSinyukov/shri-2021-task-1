@@ -43,30 +43,31 @@ const personsPhoto = {
 
 class TemplateBuilder {
 
+
   leaders(data) {
     let templateContent = '';
     const orderArray = [4, 2, 0, 1, 3];
     const selectedItem = data.data.users.find((user) => user.id === data.data.selectedUserId);
     const originalSelectedIndex = data.data.users.indexOf(selectedItem);
     let selectedIndex = originalSelectedIndex;
-    orderArray.forEach((item) => {
+    orderArray.forEach((user) => {
       // если выбранный участник не окажется в пятерке
-      if ((item === 4)&&(selectedIndex > 4 )) {
+      if ((user === 4)&&(selectedIndex > 4 )) {
         data.data.users[4].originalIndex = selectedIndex;
         data.data.users[4] = selectedItem;
         selectedIndex = 4;
       }
-      templateContent = templateContent + `<div class="leaders__column ${(item === 4)||(item === 3) ? `leaders__column_small ${(selectedIndex === item)&&((selectedIndex === 3)||(selectedIndex === 4)) ? 'leaders__column_choice' : ''}` : `leaders__column_${item === 0 ? 'large' : 'medium'}`}">
-                                              <div class="person ${(item === 1)||(item === 3) ? 'person_right-columns' : ''}">
-                                                ${(item === 0)||(selectedIndex === item)? `<span class="person__emoji">${item === 0 ? `${data.data.emoji}` : '👍'}</span>` : ''}
+      templateContent = templateContent + `<div class="leaders__column ${(user === 4)||(user === 3) ? `leaders__column_small ${(selectedIndex === user)&&((selectedIndex === 3)||(selectedIndex === 4)) ? 'leaders__column_choice' : ''}` : `leaders__column_${user === 0 ? 'large' : 'medium'}`}">
+                                              <div class="person ${(user === 1)||(user === 3) ? 'person_right-columns' : ''}">
+                                                ${(user === 0)||(selectedIndex === user)? `<span class="person__emoji">${user === 0 ? `${data.data.emoji}` : '👍'}</span>` : ''}
                                                 <div class="person__photo-container">
-                                                  <img class="person__photo" src="${personsPhoto[data.data.users[item].id]}" alt="фото участника">
+                                                  <img class="person__photo" src="${personsPhoto[data.data.users[user].id]}" alt="фото участника">
                                                 </div>
-                                                <span class="person__name">${data.data.users[item].name}</span>
-                                                <span class="person__results">${data.data.users[item].valueText}</span>
+                                                <span class="person__name">${data.data.users[user].name}</span>
+                                                <span class="person__results">${data.data.users[user].valueText}</span>
                                               </div>
-                                              <div class="leaders__base ${(item === 1)||(item === 3) ? 'leaders__base_right-columns' : ''}">
-                                                <span class="leaders__number">${(originalSelectedIndex !== selectedIndex)&&(item === 4) ? originalSelectedIndex  : (item + 1) }</span>
+                                              <div class="leaders__base ${(user === 1)||(user === 3) ? 'leaders__base_right-columns' : ''}">
+                                                <span class="leaders__number">${(originalSelectedIndex !== selectedIndex)&&(user === 4) ? originalSelectedIndex  : (user + 1) }</span>
                                               </div>
                                             </div>`;
     });
