@@ -19,7 +19,7 @@ import personPhoto12 from '../images/12.jpg';
 
 const body = document.querySelector('.page');
 const favicon = document.querySelector('#favicon');
-
+// считывание параметров строки
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const slideNumber = urlParams.get('slide') || 1;
@@ -41,7 +41,86 @@ const personsPhoto = {
   12: personPhoto12,
 }
 
+//класс, который содержит функции шаблонов
 class TemplateBuilder {
+  diagram(data) {
+    let donutContent = '';
+    let descriptionContent = '';
+
+    const circleLength = data.data.categories.reduce((prev, item) => {
+      return prev + parseInt(item.valueText);
+    }, 0);
+
+    data.data.categories.reduce((prev, item, i) => {
+      descriptionContent = descriptionContent + `<li class="diagram__list-line">
+                                                  <div class="diagram__line-color"></div>
+                                                  <span class="diagram__main-text">${item.title}</span>
+                                                  <span class="diagram__additional-text">${item.differenceText.slice(0, 1)}${parseInt(item.differenceText.slice(1))}</span>
+                                                  <span class="diagram__additional-text">${parseInt(item.valueText)}</span>
+                                                </li>`;
+
+      const currentValue = parseInt(item.valueText);
+      //356 т.к. 4 пробела по 1 градусу
+      const segmentLength = currentValue * 356 / circleLength;
+      //центрируем первый сегмент сверху
+      if (i === 0 ) {
+        prev = prev + (segmentLength / 2);
+      }
+      donutContent = donutContent + `<circle class="diagram__donut-segment" stroke-dasharray="${segmentLength} ${360 - segmentLength}" stroke-dashoffset="${prev}"></circle>`;
+      //находим отправную точку для следующей окружности с учетом пробела в градус
+      return prev = prev - segmentLength - 1;
+    }, 90);
+
+    return `<div class="diagram">
+              <div class="diagram__chart">
+                <h3 class="diagram__donut-title">${data.data.totalText}</h3>
+                <h4 class="diagram__donut-subtitle">${data.data.differenceText}</h4>
+                <svg viewBox="0 0 140 140" class="diagram__donut">
+
+                  <defs>
+                    <radialGradient id="light-gold" cx="49.84%" cy="49.84%" r="58%">
+                      <stop offset="81.25%" stop-color="rgba(255, 184, 0, 0.56)"/>
+                      <stop offset="100%" stop-color="rgba(255, 239, 153, 0.32)"/>
+                    </radialGradient>
+                    <radialGradient id="light-gold-low" cx="49.84%" cy="49.84%" r="66%">
+                      <stop offset="81.25%" stop-color="rgba(255, 184, 0, 0.24)"/>
+                      <stop offset="100%" stop-color="rgba(255, 239, 153, 0.12)"/>
+                    </radialGradient>
+                    <radialGradient id="light-grey-light" cx="49.84%" cy="49.84%" r="67%">
+                      <stop offset="82.81%" stop-color="rgba(166, 166, 166, 0.1725)"/>
+                      <stop offset="92.19%" stop-color="rgba(203, 203, 203, 0.05)"/>
+                    </radialGradient>
+                    <radialGradient id="light-grey-dark" cx="49.84%" cy="49.84%" r="68%">
+                      <stop offset="82.81%" stop-color="rgba(191, 191, 191, 0.345)"/>
+                      <stop offset="92.19%" stop-color="rgba(228, 228, 228, 0.1)"/>
+                    </radialGradient>
+
+                    <radialGradient id="dark-gold" cx="49.84%" cy="50.16%" r="56%">
+                      <stop offset="71.88%" stop-color="rgba(255, 163, 0, 0.8)"/>
+                      <stop offset="100%" stop-color="rgba(91, 58, 0, 0.8)"/>
+                    </radialGradient>
+                    <radialGradient id="dark-gold-low" cx="49.84%" cy="50.16%" r="70%">
+                      <stop offset="72.92%" stop-color="rgba(99, 63, 0, 0.8)"/>
+                      <stop offset="100%" stop-color="rgba(15, 9, 0, 0.9)"/>
+                    </radialGradient>
+                    <radialGradient id="dark-grey-light" cx="49.84%" cy="50.16%" r="60%">
+                      <stop offset="71.88%" stop-color="rgba(155, 155, 155, 0.5)"/>
+                      <stop offset="100%" stop-color="rgba(56, 41, 0, 0.5)"/>
+                    </radialGradient>
+                    <radialGradient id="dark-grey-dark" cx="49.84%" cy="50.16%" r="60%">
+                      <stop offset="71.88%" stop-color="rgba(77, 77, 77, 0.5)"/>
+                      <stop offset="100%" stop-color="rgba(56, 41, 0, 0.5)"/>
+                    </radialGradient>
+                  </defs>
+                  ${donutContent}
+                </svg>
+              </div>
+              <ul class="diagram__list">
+                ${descriptionContent}
+              </ul>
+            </div>`;
+  }
+
   chart(data) {
     let contentResults = '';
     let contentLeaders = '';
@@ -159,6 +238,7 @@ window.renderTemplate = function(alias, data) {
           </section>`;
 }
 
+//вызовы функций при загрузке страницы
 setTheme();
 body.innerHTML = window.renderTemplate(data[slideNumber - 1].alias, data[slideNumber - 1]);
 
