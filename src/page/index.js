@@ -123,7 +123,7 @@ class TemplateBuilder {
         data.data.users[4] = selectedItem;
         selectedIndex = 4;
       }
-      templateContent = templateContent + `<div class="leaders__column ${(user === 4)||(user === 3) ? `leaders__column_small ${(selectedIndex === user)&&((selectedIndex === 3)||(selectedIndex === 4)) ? 'leaders__column_choice' : ''}` : `leaders__column_${user === 0 ? 'large' : 'medium'}`}">
+      templateContent = templateContent + `<div class="leaders__column ${(user === 4)||(user === 3) ? `leaders__column_small ${(selectedIndex === user)&&((selectedIndex === 3)||(selectedIndex === 4)) ? 'leaders__column_choice' : ''}` : `leaders__column_${user === 0 ? 'large' : 'medium'}`}  ${(user === 1) ? 'leaders__column_medium_right-column' : ''}">
                                               <div class="person ${(user === 1)||(user === 3) ? 'person_right-columns' : ''}">
                                                 ${(user === 0)||(selectedIndex === user)? `<span class="person__emoji">${user === 0 ? `${data.data.emoji}` : '👍'}</span>` : ''}
                                                 <div class="person__photo-container">
