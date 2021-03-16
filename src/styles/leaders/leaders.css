@@ -2,6 +2,7 @@
 @import url(./__column/_choice/leaders__column_choice.css);
 @import url(./__column/_small/leaders__column_small.css);
 @import url(./__column/_medium/leaders__column_medium.css);
+@import url(./__column/_medium//leaders__column_medium_right-column.css);
 @import url(./__column/_large/leaders__column_large.css);
 @import url(./__base/leaders__base.css);
 @import url(./__base/_right-columns/leaders__base_right-columns.css);
@@ -12,14 +13,20 @@
   flex-direction: row;
   box-sizing: border-box;
   flex-grow: 1;
-  margin: 3% 9.88% 0;
+  margin: 1.5% 9.88% 0;
   position: relative;
 }
 
 @media screen and (orientation: portrait) {
   .leaders {
     min-height: 386px;
-    margin: 15.69% 6.38% 0;
+    margin: calc(100vh * 0.106) 6.38% 0;
+  }
+}
+
+@media screen and (min-width : 730px) and (orientation: portrait) {
+  .leaders {
+    margin: 5% 6.38% 0;
   }
 }
 
