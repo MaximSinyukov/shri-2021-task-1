@@ -1,5 +1,6 @@
 import './index.css';
-import data from '../../data/data.json';
+import data from '../data/data.json';
+
 // импортировал фото, чтобы вебпак проставил нужные пути
 import darkIcon from '../images/favicon_dark.ico';
 import lightIcon from '../images/favicon_light.ico';
@@ -15,7 +16,6 @@ import personPhoto9 from '../images/9.jpg';
 import personPhoto10 from '../images/10.jpg';
 import personPhoto11 from '../images/11.jpg';
 import personPhoto12 from '../images/12.jpg';
-
 
 const body = document.querySelector('.page');
 const favicon = document.querySelector('#favicon');
