@@ -1,10 +1,10 @@
 .leaders__base_right-columns {
   padding-right: 0;
-  padding-left: var(--person-left , 15%);
+  padding-left: var(--person-left , 15.39%);
 }
 
 @media screen and (orientation: portrait) {
   .leaders__base_right-columns {
-    width: var(--choise-right-column, 115.38%);
+    width: var(--choise-right-column, 115.39%);
   }
 }

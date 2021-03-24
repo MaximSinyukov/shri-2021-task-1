@@ -1,6 +1,6 @@
 .leaders__column_small {
   --base-z-index: 2;
-  margin-top: calc(100vh * 0.106);
+  margin-top: calc(100vh * 0.106382);
 }
 
 @media screen and (orientation: portrait) {

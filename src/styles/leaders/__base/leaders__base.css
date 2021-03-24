@@ -1,8 +1,8 @@
 .leaders__base {
   display: var(--choice, var(--small-column-display, flex));
   box-sizing: border-box;
-  padding-right: var(--large-padding, 15%);
-  width: 115.1%;
+  padding-right: var(--large-padding, 15.39%);
+  width: 115.39%;
   background: var(--leaders-base-background);
   box-shadow: var(--leaders-base-shadow);
   border-radius: 6px 6px 0 0;
@@ -13,7 +13,7 @@
 
 @media screen and (orientation: portrait) {
   .leaders__base {
-    width: 115.38%;
-    padding-right: var(--large-padding, 13.33%);
+    width: 115.39%;
+    padding-right: var(--large-padding, 15.39%);
   }
 }

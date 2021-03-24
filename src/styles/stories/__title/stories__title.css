@@ -2,10 +2,10 @@
   color: var(--main-text-color);
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: bold;
-  margin: 3% 7.78% 1.2%;
+  margin: 2.996% 7.785% 1.198%;
   text-align: center;
   font-size: calc(100vh * 0.0798);
-  line-height: calc(100vh * 0.0851);
+  line-height: calc(100vh * 0.0852);
 }
 
 @media screen and (orientation: portrait) {
@@ -13,7 +13,7 @@
     text-align: left;
     font-size: calc(100vh * 0.0449);
     line-height: calc(100vh * 0.048);
-    margin: calc(100vh * 0.0299) 13.83% calc(100vh * 0.012) 6.38%;
+    margin: calc(100vh * 0.02994) 13.83% calc(100vh * 0.011976) 6.385%;
   }
 }
 

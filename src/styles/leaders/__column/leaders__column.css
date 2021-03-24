@@ -1,12 +1,12 @@
 .leaders__column {
   display: flex;
   flex-direction: column;
-  width: 19.5%;
+  width: 19.405%;
   justify-content: flex-end;
 }
 
 @media screen and (orientation: portrait) {
   .leaders__column {
-    width: 31.9%;
+    width: 31.71%;
   }
 }

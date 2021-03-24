@@ -1,7 +1,7 @@
 .person__photo-container {
   display: flex;
-  width: 61.54%;
-  margin: 19.23% 19.23% 5.77%;
+  width: 61.55%;
+  margin: 19.24% auto 5.77%;
 }
 
 .person__photo-container::after {

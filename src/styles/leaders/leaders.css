@@ -20,7 +20,7 @@
 @media screen and (orientation: portrait) {
   .leaders {
     min-height: 386px;
-    margin: calc(100vh * 0.106) 6.38% 0;
+    margin: calc(100vh * 0.10635) 6.387% 0;
   }
 }
 
@@ -32,6 +32,6 @@
 
 @media screen and (max-width : 1660px) and (orientation: landscape) {
   .leaders {
-    margin: 4.19% 9.88% 0;
+    margin: 4.194% 9.882% 0;
   }
 }
