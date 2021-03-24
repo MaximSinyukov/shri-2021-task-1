@@ -89,10 +89,11 @@ class TemplateBuilder {
   ////////////////////////////////////////////////////////////////////////////////VOTE///////////////////////////////////////////////////////
   vote(data) {
     let templateContent = '';
-
+    let startOffset = data.data.offset - 8 || 0;
+    let endOffset = data.data.offset || 8;
     data.data.users.forEach((user, i) => {
-      if (i < 8) {
-      templateContent = templateContent + `<li class="vote__card ${i > 5 ? 'vote__card_portrait' : ''} ${data.data.selectedUserId === user.id ? 'vote__card_selected' : ''}">
+      if ((i < endOffset)&&(i >= startOffset)) {
+      templateContent = templateContent + `<li class="vote__card ${i > endOffset - 3 ? 'vote__card_portrait' : ''} ${data.data.selectedUserId === user.id ? 'vote__card_selected' : ''}"    data-action="update" data-params='{ \"alias\": \"leaders\", \"data\": { \"selectedUserId\": ${user.id} }}'>
                                             <div class="person">
                                               <div class="person__photo-container">
                                                 <img class="person__photo" src="${personsPhoto[user.id]}" alt="фото участника">
@@ -104,8 +105,8 @@ class TemplateBuilder {
     });
 
     return `<div class="vote">
-              <button type="button" class="vote__button vote__button_up" disabled></button>
-              <button type="button" class="vote__button vote__button_down"></button>
+              <button type="button" class="vote__button vote__button_up" data-action="update" data-params='{ \"alias\": \"vote\", \"data\": { \"offset\": ${endOffset - 2} }}' ${endOffset - 2 < 8 ? 'disabled' : ''}></button>
+              <button type="button" class="vote__button vote__button_down" data-action="update" data-params='{ \"alias\": \"vote\", \"data\": { \"offset\": ${endOffset + 2} }}'  ${endOffset + 2 > data.data.users.length ? 'disabled' : ''}></button>
               <ul class="vote__cards-container">
                 ${templateContent}
               </ul>
@@ -292,13 +293,14 @@ function setTheme() {
 
 window.renderTemplate = function(alias, data) {
   const template = templates[alias](data);
-  return `<section class="stories">
+  return `<section class="stories" data-action="empty">
             <h1 class="stories__title">${data.data.title}</h1>
             <h2 class="stories__subtitle">${data.data.subtitle}</h2>
             ${template}
           </section>`;
 }
 
+/////////////////////////////////////////////////////////////// необходимо для разработки, закомментить перед финальной сборкой
 //вызовы функций при загрузке страницы
 setTheme();
 body.innerHTML = window.renderTemplate(data[slideNumber - 1].alias, data[slideNumber - 1]);
@@ -307,3 +309,4 @@ body.innerHTML = window.renderTemplate(data[slideNumber - 1].alias, data[slideNu
 if(typeof(module.hot) !== 'undefined') {
   module.hot.accept();
 }
+///////////////////////////////////////////////////////////////
