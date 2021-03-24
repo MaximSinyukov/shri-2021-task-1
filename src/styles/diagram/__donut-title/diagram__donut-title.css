@@ -15,6 +15,7 @@
 
 @media screen and (orientation: portrait) {
   .diagram__donut-title {
+    top: 32.32%;
     line-height: calc(100vh * 0.0449);
     font-size: calc(100vh * 0.0479);
   }

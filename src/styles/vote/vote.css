@@ -13,15 +13,15 @@
 
 @media screen and (orientation: landscape) and (max-width : 1600px) {
   .vote {
-    width: 90.42%;
+    width: 90.62%;
   }
 }
 
 @media screen and (orientation: portrait) {
   .vote {
     display: flex;
-    margin: 0 6.38%;
-    width: 87.24%;
+    margin: 0 6.385%;
+    width: 87.235%;
     flex-grow: 1;
   }
 }

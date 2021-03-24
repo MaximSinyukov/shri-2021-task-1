@@ -1,7 +1,13 @@
 .vote__button_up {
   transform: translate(-50%, 0) rotate(180deg);
-  top: calc(100vh * 0.12);
+  top: calc(100vh * 0.09);
   bottom: auto;
+}
+
+@media screen and (orientation: landscape) and (max-width : 720px) {
+  .vote__button_up {
+    top: calc(100vh * 0.15159);
+  }
 }
 
 @media screen and (orientation: landscape) and (max-width : 540px) {
@@ -12,7 +18,7 @@
 
 @media screen and (orientation: portrait) {
   .vote__button_up  {
-    top: 4.37%;
+    top: 4.375%;
     bottom: auto;
   }
 }

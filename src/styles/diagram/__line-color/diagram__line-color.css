@@ -10,7 +10,7 @@
 
 @media screen and (orientation: portrait) {
   .diagram__line-color {
-    width: calc(100vh * 0.0239);
-    height: calc(100vh * 0.0239);
+    width: calc(100vh * 0.02397);
+    height: calc(100vh * 0.02397);
   }
 }

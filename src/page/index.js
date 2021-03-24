@@ -238,7 +238,7 @@ class TemplateBuilder {
               <div class="diagram__chart">
                 <h3 class="diagram__donut-title">${data.totalText}</h3>
                 <h4 class="diagram__donut-subtitle">${data.differenceText}</h4>
-                <svg viewBox="0 0 140 140" class="diagram__donut">
+                <svg viewBox="0 0 135 135" class="diagram__donut">
 
                   <defs>
                     <radialGradient id="light-gold" cx="49.84%" cy="49.84%" r="58%">

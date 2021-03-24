@@ -9,7 +9,7 @@
 @media screen and (orientation: portrait) {
   .diagram__chart {
     width: 100%;
-    height: calc(100vh * 0.491);
+    height: calc(100vh * 0.49102);
     margin: auto 0;
   }
 }

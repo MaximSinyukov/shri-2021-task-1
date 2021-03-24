@@ -7,7 +7,7 @@
 .vote__card_selected::after {
   content: '👍';
   position: absolute;
-  top: -4.5%;
+  top: -2%;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 5;

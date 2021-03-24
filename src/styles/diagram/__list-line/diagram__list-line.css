@@ -36,8 +36,8 @@
 
 @media screen and (orientation: portrait) {
   .diagram__list-line {
-    font-size: calc(100vh * 0.0239);
-    line-height: calc(100vh * 0.0269);
-    padding: 4.9% 0;
+    font-size: calc(100vh * 0.02396);
+    line-height: calc(100vh * 0.02695);
+    padding: 4.88% 0;
   }
 }

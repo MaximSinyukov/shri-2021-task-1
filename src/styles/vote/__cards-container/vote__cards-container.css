@@ -4,9 +4,9 @@
   padding: 0;
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 1fr 10.6% 1fr 1fr;
+  grid-template-columns: 1fr 1fr 10.56105% 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: calc(100vh * 0.0106) 5.13%;
+  gap: calc(100vh * 0.0106) 5.17625%;
 }
 
 .vote__cards-container::before {
@@ -26,7 +26,7 @@
     align-content: space-evenly;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, min-content);
-    column-gap: 2.44%;
+    column-gap: 2.43902%;
     row-gap: initial;
   }
 

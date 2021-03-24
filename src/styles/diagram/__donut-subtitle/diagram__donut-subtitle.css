@@ -3,7 +3,7 @@
   position: absolute;
   left: 50%;
   bottom: 32%;
-  min-width: 67%;
+  max-width: 67%;
   transform: translate(-50%, 0);
   text-align: center;
   line-height: calc(100vh * 0.0478);
@@ -15,8 +15,9 @@
 
 @media screen and (orientation: portrait) {
   .diagram__donut-subtitle {
-    min-width: 57%;
-    line-height: calc(100vh * 0.0299);
-    font-size: calc(100vh * 0.0329);
+    bottom: 32.32%;
+    max-width: 57%;
+    line-height: calc(100vh * 0.03293);
+    font-size: calc(100vh * 0.02994);
   }
 }

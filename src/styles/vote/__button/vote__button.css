@@ -3,13 +3,13 @@
   background-image: var(--vote-button-url);
   background-size: cover;
   background-position: center;
-  width: 10.53%;
+  width: 10.575%;
   background-color: transparent;
   border: none;
   padding: 0;
   position: absolute;
   left: 50%;
-  bottom: calc(100vh * 0.12);
+  bottom: calc(100vh * 0.09);
   transform: translate(-50%, 0);
   transition: background-image .3s ease;
   cursor: pointer;
@@ -31,6 +31,12 @@
   cursor: default;
 }
 
+@media screen and (orientation: landscape) and (max-width : 720px) {
+  .vote__button {
+    bottom: calc(100vh * 0.15159);
+  }
+}
+
 @media screen and (orientation: landscape) and (max-width : 540px) {
   .vote__button {
     bottom: calc(100vh * 0.1383);
@@ -40,9 +46,9 @@
 
 @media screen and (orientation: portrait) {
   .vote__button {
-    width: 19.51%;
+    width: 19.516%;
     top: auto;
-    bottom: 4.37%;
+    bottom: 4.375%;
   }
 }
 
