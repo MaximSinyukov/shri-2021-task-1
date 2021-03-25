@@ -20,13 +20,16 @@
 @media screen and (orientation: portrait) {
   .leaders {
     min-height: 386px;
-    margin: calc(100vh * 0.10635) 6.387% 0;
+    flex-grow: initial;
+    margin: auto 6.387% 0;
+    height: calc(100vh * 0.7290419);
   }
 }
 
 @media screen and (min-width : 730px) and (orientation: portrait) {
   .leaders {
-    margin: 5% 6.38% 0;
+    margin: auto 6.387% 0;
+    height: calc(100vh * 0.76);
   }
 }
 

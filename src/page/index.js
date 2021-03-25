@@ -54,25 +54,27 @@ class TemplateBuilder {
 
     data.values.forEach((value, i) => {
       if ((i > 3)&&(i < 13)) {
-        contentResults = contentResults + `<div class="chart__column-container ${value.active ? 'chart__column-container_active' : ''}">
-                                            <h3 class="chart__column-value">${value.value}</h3>
-                                            <div class="chart__column" style="height: calc((${value.value} / ${maxValue}) * 66.2%);"></div>
-                                            <h4 class="chart__column-name">${value.title}</h4>
-                                          </div>`;
+        contentResults = contentResults +
+          `<div class="chart__column-container ${value.active ? 'chart__column-container_active' : ''}">
+            <h3 class="chart__column-value">${value.value > 0 ? value.value : ''}</h3>
+            <div class="chart__column" style="--chart-column-height: calc(${value.value} / ${maxValue});"></div>
+            <h4 class="chart__column-name">${value.title}</h4>
+          </div>`;
       }
     });
 
     data.users.forEach((user, i) => {
       if (i < 2) {
-        contentLeaders = contentLeaders + `<div class="chart__person">
-                                            <div class="chart__photo-container">
-                                              <img class="chart__person-photo" src="${personsPhoto[user.id]}" alt="фото участника">
-                                            </div>
-                                            <div class="chart__data-container">
-                                              <h3 class="chart__person-name">${user.name}</h3>
-                                              <h4 class="chart__person-results">${user.valueText}</h4>
-                                            </div>
-                                          </div>`;
+        contentLeaders = contentLeaders +
+          `<div class="chart__person">
+            <div class="chart__photo-container">
+              <img class="chart__person-photo" src="${personsPhoto[user.id]}" alt="фото участника">
+            </div>
+            <div class="chart__data-container">
+              <h3 class="chart__person-name">${user.name}</h3>
+              <h4 class="chart__person-results">${user.valueText}</h4>
+            </div>
+          </div>`;
       }
     });
 
@@ -93,14 +95,15 @@ class TemplateBuilder {
     let endOffset = data.offset || 8;
     data.users.forEach((user, i) => {
       if ((i < endOffset)&&(i >= startOffset)) {
-      templateContent = templateContent + `<li class="vote__card ${i > endOffset - 3 ? 'vote__card_portrait' : ''} ${data.selectedUserId === user.id ? 'vote__card_selected' : ''}"    data-action="update" data-params='{ \"alias\": \"leaders\", \"data\": { \"selectedUserId\": ${user.id} }}'>
-                                            <div class="person">
-                                              <div class="person__photo-container">
-                                                <img class="person__photo" src="${personsPhoto[user.id]}" alt="фото участника">
-                                              </div>
-                                              <span class="person__name">${user.name}</span>
-                                            </div>
-                                          </li>`;
+      templateContent = templateContent +
+        `<li class="vote__card ${i > endOffset - 3 ? 'vote__card_portrait' : ''} ${data.selectedUserId === user.id ? 'vote__card_selected' : ''}"    data-action="update" data-params='{ \"alias\": \"leaders\", \"data\": { \"selectedUserId\": ${user.id} }}'>
+          <div class="person">
+            <div class="person__photo-container">
+              <img class="person__photo" src="${personsPhoto[user.id]}" alt="фото участника">
+            </div>
+            <span class="person__name">${user.name}</span>
+          </div>
+        </li>`;
       }
     });
 
@@ -128,19 +131,20 @@ class TemplateBuilder {
         data.users[4] = selectedItem;
         selectedIndex = 4;
       }
-      templateContent = templateContent + `<div class="leaders__column ${(user === 4)||(user === 3) ? `leaders__column_small ${(selectedIndex === user)&&((selectedIndex === 3)||(selectedIndex === 4)) ? 'leaders__column_choice' : ''}` : `leaders__column_${user === 0 ? 'large' : 'medium'}`}  ${(user === 1) ? 'leaders__column_medium_right-column' : ''}">
-                                              <div class="person ${(user === 1)||(user === 3) ? 'person_right-columns' : ''}">
-                                                ${(user === 0)||(selectedIndex === user)? `<span class="person__emoji">${user === 0 ? `${data.emoji}` : '👍'}</span>` : ''}
-                                                <div class="person__photo-container">
-                                                  <img class="person__photo" src="${personsPhoto[data.users[user].id]}" alt="фото участника">
-                                                </div>
-                                                <span class="person__name">${data.users[user].name}</span>
-                                                <span class="person__results">${data.users[user].valueText}</span>
-                                              </div>
-                                              <div class="leaders__base ${(user === 1)||(user === 3) ? 'leaders__base_right-columns' : ''}">
-                                                <span class="leaders__number">${(originalSelectedIndex !== selectedIndex)&&(user === 4) ? originalSelectedIndex  : (user + 1) }</span>
-                                              </div>
-                                            </div>`;
+      templateContent = templateContent +
+      `<div class="leaders__column ${(user === 4)||(user === 3) ? `leaders__column_small ${(selectedIndex === user)&&((selectedIndex === 3)||(selectedIndex === 4)) ? 'leaders__column_choice' : ''}` : `leaders__column_${user === 0 ? 'large' : 'medium'}`}  ${(user === 1) ? 'leaders__column_medium_right-column' : ''}">
+        <div class="person ${(user === 1)||(user === 3) ? 'person_right-columns' : ''}">
+          ${(user === 0)||(selectedIndex === user)? `<span class="person__emoji">${user === 0 ? `${data.emoji}` : '👍'}</span>` : ''}
+          <div class="person__photo-container">
+            <img class="person__photo" src="${personsPhoto[data.users[user].id]}" alt="фото участника">
+          </div>
+          <span class="person__name">${data.users[user].name}</span>
+          <span class="person__results">${data.users[user].valueText}</span>
+        </div>
+        <div class="leaders__base ${(user === 1)||(user === 3) ? 'leaders__base_right-columns' : ''}">
+          <span class="leaders__number">${(originalSelectedIndex !== selectedIndex)&&(user === 4) ? originalSelectedIndex  : (user + 1) }</span>
+        </div>
+      </div>`;
     });
 
     return `<div class="leaders">
@@ -166,10 +170,11 @@ class TemplateBuilder {
       portraitHour = Math.floor(i / 7);
       valuePortrait = data.data[daysArray[portraitDay]][portraitHour];
       //по два элемента с картинкой для разных ориентаций
-      mapContent = mapContent + `<div class="activity__cell">
-                                  <div class="activity__image activity__image_${valueLandscape === 0 ? 'min' : (valueLandscape < 3 ? 'mid' : (valueLandscape < 5 ? 'max' : 'extra'))}"></div>
-                                  <div class="activity__image activity__image_${valuePortrait === 0 ? 'min' : (valuePortrait < 3 ? 'mid' : (valuePortrait < 5 ? 'max' : 'extra'))}"></div>
-                                </div>`;
+      mapContent = mapContent +
+        `<div class="activity__cell">
+          <div class="activity__image activity__image_${valueLandscape === 0 ? 'min' : (valueLandscape < 3 ? 'mid' : (valueLandscape < 5 ? 'max' : 'extra'))}"></div>
+          <div class="activity__image activity__image_${valuePortrait === 0 ? 'min' : (valuePortrait < 3 ? 'mid' : (valuePortrait < 5 ? 'max' : 'extra'))}"></div>
+        </div>`;
     }
     return `<div class="activity">
               <div class="activity__map">
@@ -215,12 +220,13 @@ class TemplateBuilder {
     }, 0);
 
     data.categories.reduce((prev, item, i) => {
-      descriptionContent = descriptionContent + `<li class="diagram__list-line">
-                                                  <div class="diagram__line-color"></div>
-                                                  <span class="diagram__main-text">${item.title}</span>
-                                                  <span class="diagram__additional-text">${item.differenceText.slice(0, 1)}${parseInt(item.differenceText.slice(1))}</span>
-                                                  <span class="diagram__additional-text">${parseInt(item.valueText)}</span>
-                                                </li>`;
+      descriptionContent = descriptionContent +
+        `<li class="diagram__list-line">
+          <div class="diagram__line-color"></div>
+          <span class="diagram__main-text">${item.title}</span>
+          <span class="diagram__additional-text">${item.differenceText.slice(0, 1)}${parseInt(item.differenceText.slice(1))}</span>
+          <span class="diagram__additional-text">${parseInt(item.valueText)}</span>
+        </li>`;
 
       const currentValue = parseInt(item.valueText);
       //356 т.к. 4 пробела по 1 градусу

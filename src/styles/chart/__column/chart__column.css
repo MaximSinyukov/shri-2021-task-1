@@ -3,12 +3,13 @@
   background: var(--chart-column-background);
   box-shadow: var(--chart-column-shadow);
   border-radius: 6px;
-  max-height: 70%;
   min-height: 4.52%;
+  height: calc(var(--chart-column-height) * 66.10169%);
 }
 
 @media screen and (orientation: portrait) {
   .chart__column {
+    height: calc(var(--chart-column-height) * 63.09%);
     min-height: 1.9%;
   }
 }

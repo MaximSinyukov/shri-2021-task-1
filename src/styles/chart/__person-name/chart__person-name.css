@@ -1,33 +1,26 @@
 .chart__person-name {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-size: 42px;
-  line-height: 46px;
+  font-size: calc(100vh * 0.0415);
+  line-height: calc(100vh * 0.04);
   text-align: start;
   color: var(--main-text-color);
-  margin: 0 0 3.3%;
+  margin: 0 0 3.24%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-@media screen and (orientation: portrait) and (max-width : 1600px), screen and (orientation: landscape) and (max-width : 1680px) {
-  .chart__person-name {
-    font-size: 32px;
-    line-height: 36px;
+@media screen and (orientation: landscape) and (max-width : 960px) {
+  .chart__person-results {
+    font-size: calc(100vh * 0.042554);
+    line-height: calc(100vh * 0.04788);
   }
 }
 
-@media screen and (orientation: portrait) and (max-width : 1152px), screen and (orientation: landscape) and (max-width : 1440px) {
+@media screen and (orientation: portrait) {
   .chart__person-name {
-    font-size: 24px;
-    line-height: 26px;
-  }
-}
-
-@media screen and (orientation: portrait) and (max-width : 540px), screen and (orientation: landscape) and (max-width : 1152px) {
-  .chart__person-name {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: calc(100vh * 0.023952);
+    line-height: calc(100vh * 0.02695);
   }
 }

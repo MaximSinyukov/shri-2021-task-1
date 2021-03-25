@@ -10,10 +10,10 @@
 @media screen and (orientation: portrait) {
   .chart__leaders {
     flex-direction: column;
-    width: 87.23%;
+    width: 87.235%;
     flex-grow: 1;
     justify-content: initial;
     height: auto;
-    margin: calc(100vh * 0.0359) auto;
+    margin: calc(100vh * 0.03593) auto;
   }
 }

@@ -1,6 +1,6 @@
 .chart__photo-container {
-  margin: auto 5.91% auto 0;
-  width: calc(100vh * 0.1063);
+  margin: auto 6.365% auto 0;
+  width: calc(100vh * 0.10639);
 }
 
 .chart__photo-container::after {
@@ -11,7 +11,7 @@
 
 @media screen and (orientation: portrait) {
   .chart__photo-container {
-    margin: auto 3.72% auto 0;
+    margin: auto 4.27% auto 0;
     width: calc(100vh * 0.0599);
   }
 }

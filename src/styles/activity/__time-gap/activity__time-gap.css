@@ -6,12 +6,12 @@
 
 .activity__time-gap:nth-of-type(odd) {
   height: 100%;
-  width: 6.66%;
+  width: 6.78%;
   border-radius: 2px;
 }
 
 .activity__time-gap:nth-of-type(2) {
   flex-grow: 1;
-  height: 33.33%;
+  height: 33.35%;
   margin: auto 0;
 }
