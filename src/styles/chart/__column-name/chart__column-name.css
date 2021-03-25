@@ -3,9 +3,12 @@
   font-weight: 500;
   font-size: 42px;
   line-height: 46px;
-  text-align: center;
   color: var(--secondary-text-color);
-  margin: 0 auto;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 @media screen and (orientation: portrait) and (max-width : 1600px), screen and (orientation: landscape) and (max-width : 1680px) {

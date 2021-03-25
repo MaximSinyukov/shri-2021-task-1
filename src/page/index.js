@@ -196,15 +196,15 @@ class TemplateBuilder {
                 </li>
                 <li class="activity__gap">
                   <div class="activity__ingot activity__ingot_grey-light"></div>
-                  <h3 class="activity__title">1 — 2</h3>
+                  <h3 class="activity__title">1 — 2</h3>
                 </li>
                 <li class="activity__gap">
                   <div class="activity__ingot activity__ingot_gold-low"></div>
-                  <h3 class="activity__title">3 — 4</h3>
+                  <h3 class="activity__title">3 — 4</h3>
                 </li>
                 <li class="activity__gap">
                   <div class="activity__ingot activity__ingot_gold"></div>
-                  <h3 class="activity__title">5 — 6</h3>
+                  <h3 class="activity__title">5 — 6</h3>
                 </li>
               </ul>
             </div>`;
