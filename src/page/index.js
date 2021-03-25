@@ -171,7 +171,7 @@ class TemplateBuilder {
       valuePortrait = data.data[daysArray[portraitDay]][portraitHour];
       //по два элемента с картинкой для разных ориентаций
       mapContent = mapContent +
-        `<div class="activity__cell">
+        `<div class="activity__cell" style="--activity-cell-portrait: ${Math.trunc(i / 7) * -6.305}%; --activity-cell-landscape: ${Math.trunc(i / 24) * -18.75}%;">
           <div class="activity__image activity__image_${valueLandscape === 0 ? 'min' : (valueLandscape < 3 ? 'mid' : (valueLandscape < 5 ? 'max' : 'extra'))}"></div>
           <div class="activity__image activity__image_${valuePortrait === 0 ? 'min' : (valuePortrait < 3 ? 'mid' : (valuePortrait < 5 ? 'max' : 'extra'))}"></div>
         </div>`;

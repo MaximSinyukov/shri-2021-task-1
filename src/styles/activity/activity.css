@@ -27,6 +27,7 @@
     justify-content: flex-end;
     flex-grow: 1;
     width: calc(100vh * 0.49103);
+    width: calc(100vw * 0.87235);
     max-width: 88%;
     margin: 0 auto 6.39%;
   }

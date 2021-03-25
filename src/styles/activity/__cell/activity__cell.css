@@ -3,6 +3,7 @@
   position: relative;
   width: 8%;
   margin: 0;
+  top: var(--activity-cell-landscape);
 }
 
 .activity__cell::after {
@@ -19,34 +20,10 @@
   margin-left: 4%;
 }
 
-.activity__cell:nth-of-type(n+25) {
-  top: -18.75%;
-}
-
-.activity__cell:nth-of-type(n+49) {
-  top: -37.5%;
-}
-
-.activity__cell:nth-of-type(n+73) {
-  top: -56.25%;
-}
-
-.activity__cell:nth-of-type(n+97) {
-  top: -75%;
-}
-
-.activity__cell:nth-of-type(n+121) {
-  top: -93.75%;
-}
-
-.activity__cell:nth-of-type(n+145) {
-  top: -112.5%;
-}
-
 @media screen and (orientation: portrait) {
   .activity__cell {
     width: 13.33%;
-    height: 8.15%;
+    top: var(--activity-cell-portrait);
   }
 
   .activity__cell:nth-of-type(48n+25) {
@@ -58,102 +35,6 @@
   }
 
   .activity__cell:nth-of-type(14n+8) {
-    margin-left: 6.7%;
-  }
-
-  .activity__cell:nth-of-type(-n+7) {
-    padding-top: 2.135%;
-  }
-
-  .activity__cell:nth-of-type(n+8) {
-    top: -4.2%;
-  }
-
-  .activity__cell:nth-of-type(n+15) {
-    top: -8.4%;
-  }
-
-  .activity__cell:nth-of-type(n+22) {
-    top: -12.6%;
-  }
-
-  .activity__cell:nth-of-type(n+29) {
-    top: -16.8%;
-  }
-
-  .activity__cell:nth-of-type(n+36) {
-    top: -21%;
-  }
-
-  .activity__cell:nth-of-type(n+43) {
-    top: -25.2%;
-  }
-
-  .activity__cell:nth-of-type(n+50) {
-    top: -29.4%;
-  }
-
-  .activity__cell:nth-of-type(n+57) {
-    top: -33.6%;
-  }
-
-  .activity__cell:nth-of-type(n+64) {
-    top: -37.8%;
-  }
-
-  .activity__cell:nth-of-type(n+71) {
-    top: -42%;
-  }
-
-  .activity__cell:nth-of-type(n+78) {
-    top: -46.2%;
-  }
-
-  .activity__cell:nth-of-type(n+85) {
-    top: -50.4%;
-  }
-
-  .activity__cell:nth-of-type(n+92) {
-    top: -54.6%;
-  }
-
-  .activity__cell:nth-of-type(n+99) {
-    top: -58.8%;
-  }
-
-  .activity__cell:nth-of-type(n+106) {
-    top: -63%;
-  }
-
-  .activity__cell:nth-of-type(n+113) {
-    top: -67.2%;
-  }
-
-  .activity__cell:nth-of-type(n+120) {
-    top: -71.4%;
-  }
-
-  .activity__cell:nth-of-type(n+127) {
-    top: -75.6%;
-  }
-
-  .activity__cell:nth-of-type(n+134) {
-    top: -79.8%;
-  }
-
-  .activity__cell:nth-of-type(n+141) {
-    top: -84%;
-  }
-
-  .activity__cell:nth-of-type(n+148) {
-    top: -88.2%;
-  }
-
-  .activity__cell:nth-of-type(n+155) {
-    top: -92.4%;
-  }
-
-  .activity__cell:nth-of-type(n+162) {
-    top: -96.6%;
+    margin-left: 6.67%;
   }
 }

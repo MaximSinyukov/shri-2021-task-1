@@ -14,6 +14,16 @@
     flex-direction: row;
     margin: auto 0;
     padding: 0;
-    height: calc(100vh * 0.64123);
+    height: calc(100vw * 1.139175);
+  }
+}
+
+@media screen and (orientation: portrait) and (min-width : 768px) {
+  .activity__map {
+    flex-direction: row;
+    margin: auto;
+    padding: 0;
+    height: calc(100vw * 0.8 * 1.139175);
+    width: 80%;
   }
 }
