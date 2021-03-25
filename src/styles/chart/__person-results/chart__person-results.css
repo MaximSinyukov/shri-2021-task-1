@@ -11,7 +11,7 @@
 @media screen and (orientation: landscape) and (max-width : 960px) {
   .chart__person-results {
     font-size: calc(100vh * 0.037234);
-    line-height: calc(100vh * 0.042553);
+    line-height: calc(100vh * 0.04256);
   }
 }
 
